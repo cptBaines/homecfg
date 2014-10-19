@@ -17,3 +17,7 @@ cd ~
 git clone git://github.com:cptBaines/homecfg.git .myconfig
 cd .myconfig
 git submodule update --init
+
+Init is only needed the first time to initalize the submodule if
+you instal a newer version of the moudle and wants to synchronize
+you only need to run git submodule update
