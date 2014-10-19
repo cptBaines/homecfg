@@ -47,3 +47,5 @@ function linkconfig() {
 cd $HOME
 linkconfig .myconfig/.vim .vim
 linkconfig .myconfig/.vimrc .vimrc
+linkconfig .myconfig/.screenrc .screenrc
+linkconfig .myconfig/.tmux.conf .tmux.conf
