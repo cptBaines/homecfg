@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/bjorn/website/preview'
-let g:netrw_dirhist_2='/Users/bjorn/.mutt'
-let g:netrw_dirhist_3='/Users/bjorn/Documents/s/scripts'
-let g:netrw_dirhist_4='/Users/bjorn/Documents/assembler/sandbox'
-let g:netrw_dirhist_5='/Users/bjorn/.procmail'
