@@ -1,0 +1,9 @@
+_tag_SSL_certificates	/Users/bjorn/Documents/outlines/SSL_certificates.otl	:1
+_tag_apache	/Users/bjorn/Documents/outlines/apache.otl	:1
+_tag_api_design	/Users/bjorn/Documents/outlines/apidesign.otl	:1
+_tag_gitserver	/Users/bjorn/Documents/outlines/gitserver.otl	:1
+_tag_stenkalle	/Users/bjorn/Documents/outlines/stenkalle.otl	:1
+_tag_truecrypt	/Users/bjorn/Documents/outlines/truecrypt.otl	:1
+_tag_vim	/Users/bjorn/Documents/outlines/vim.otl	:1
+_tag_vimoutliner	/Users/bjorn/Documents/outlines/vimoutliner.otl	:1
+_tag_vmware	/Users/bjorn/Documents/outlines/vmware.otl	:1
