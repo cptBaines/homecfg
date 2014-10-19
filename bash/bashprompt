@@ -1,0 +1,29 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+function __prompt_command() {
+	local EXIT="$?"
+	PS1=""
+	
+	local RCol='\[\e[0m\]'
+	local Red='\[\e[0;31m\]'
+	local Gre='\[\e[0;32m\]'
+	local BYel='\[\e[0;33m\]'
+	local BBlu='\[\e[0;34m\]'
+	local Pur='\[\e[0;35m\]'
+
+	if [[ $EXIT != 0 ]]; then
+		PS1+="${Red}[${EXIT}] "
+	else
+		PS1+="${Gre}[${EXIT}] "
+	fi
+
+	PS1+="${RCol}\u@\h \W$ ${RCol}"
+}
+
+export PROMPT_COMMAND=__prompt_command
