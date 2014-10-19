@@ -67,8 +67,9 @@ highlight clear wildMenu
 " My own defs -- {{{
 "highlight bniLink	ctermfg=11 cterm=bold
 " Normal and visual mode
-highlight Normal	ctermbg=16 guifg=#ddaa00 guibg=#171717
-highlight Visual	ctermfg=0 ctermbg=130 cterm=reverse
+highlight Normal	ctermfg=136 ctermbg=233 
+		      \ guifg=#ddaa00 guibg=#171717
+highlight Visual	ctermfg=136 ctermbg=233 cterm=reverse
 		      \ guifg=#eebb00 guibg=#22222 gui=reverse
 
 highlight bniReverse	ctermfg=0 ctermbg=16 cterm=reverse 
