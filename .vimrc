@@ -105,23 +105,23 @@ nnoremap          <leader>gpl :Dispatch! git push<CR>
 
 " grep mapping
 "nnoremap ,g execute ":grep! -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
-nnoremap <silent> ,G :echom "execute grep! . '<cWORD>' ."<cr>
+nnoremap <silent> <leader>G :echom "execute grep! . '<cWORD>' ."<cr>
 
 " Make it easy to edit vimrc (mnemonic is 'e'dit 'v'imrc)
-nnoremap <silent> ,ev :e $MYVIMRC<cr>
+nnoremap <silent> <leader>ev :e $MYVIMRC<cr>
 
 " Make it easy to source the changed settings (mnemonic is 's'ource 'v'imrc)
-nnoremap <silent> ,sv :so $MYVIMRC<cr>
+nnoremap <silent> <leader>sv :so $MYVIMRC<cr>
 
 " cd to the directory containing the file in the buffer
-nnoremap ,cd :lcd %:h<cr>
+nnoremap <leader>cd :lcd %:h<cr>
 
 " disable highlight search
-nnoremap ,n :set invhls:set hls?<cr>
+nnoremap <leader>n :set invhls:set hls?<cr>
 
 inoremap <esc> <nop>
 inoremap jk <esc>
 
 " cscope mapping
 " mnemonic is f(ind) s(ymbol)
-nnoremap ,fs :cs find s <c-r>=expand("<cword>")<cr><cr>
+nnoremap <leader>fs :cs find s <c-r>=expand("<cword>")<cr><cr>
