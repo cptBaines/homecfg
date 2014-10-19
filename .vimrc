@@ -2,6 +2,9 @@
 " Settings
 " ===========================================================================
 
+" Enable patogen
+execute pathogen#infect()
+
 " Enable filtype stuff
 filetype on
 filetype plugin on
