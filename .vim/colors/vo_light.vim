@@ -1,4 +1,5 @@
 let g:colors_name="VO Light"
+echom "loading VO Light"
 hi normal guifg=black guibg=white	ctermfg=white ctermbg=black
 hi StatusLine guifg=black guibg=white	ctermfg=white ctermbg=black
 hi StatusLineNC guifg=black guibg=white	ctermfg=white ctermbg=black
@@ -79,3 +80,4 @@ hi FoldColumn guifg=darkcyan guibg=bg	ctermfg=cyan ctermbg=white
 " this only works for spellfix.vim with will be cease to exist soon
 hi spellErr gui=underline guifg=darkred cterm=underline ctermfg=darkred
 hi BadWord gui=underline guifg=darkred cterm=underline ctermfg=darkred
+echom "VO Light loaded"
