@@ -17,8 +17,8 @@ syntax on
 colorscheme mycolor
 
 " Fix statusline hilighting
-hi StatusLine cterm=bold
-hi StatusLineNC cterm=reverse
+"hi StatusLine cterm=bold
+"hi StatusLineNC cterm=reverse
 
 " Show me when i'm over 80 columns wide
 call matchadd('colorcolumn', '\%81v', 100)
