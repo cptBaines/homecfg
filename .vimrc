@@ -83,9 +83,29 @@ source .vim/myfunc/workJournal.vim
 " Mappings
 " ===========================================================================
 
+let mapleader = ","
+
+" vim-fugative
+nnoremap <silent> <leader>ga :Git add %:p<CR><CR>
+nnoremap <silent> <leader>gs :Gstatus<CR>
+nnoremap <silent> <leader>gc :Gcommit -v -q<CR>
+nnoremap <silent> <leader>gt :Gcommit -v -q %:p<CR>
+nnoremap <silent> <leader>gd :Gdiff<CR>
+nnoremap <silent> <leader>ge :Gedit<CR>
+nnoremap <silent> <leader>gr :Gread<CR>
+nnoremap <silent> <leader>gw :Gwrite<CR>
+nnoremap <silent> <leader>gl :silent! Glog<CR>:bot copen<CR>
+nnoremap          <leader>gp :Grep<space>
+nnoremap          <leader>gm :Gmove<space>
+nnoremap          <leader>gb :Git branch<space>
+nnoremap          <leader>go :Git checkout<space>
+nnoremap          <leader>gps :Dispatch! git push<CR>
+nnoremap          <leader>gpl :Dispatch! git push<CR>
+
+
 " grep mapping
 "nnoremap ,g execute ":grep! -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
-nnoremap <silent> ,g :echom "execute grep! . '<cWORD>' ."<cr>
+nnoremap <silent> ,G :echom "execute grep! . '<cWORD>' ."<cr>
 
 " Make it easy to edit vimrc (mnemonic is 'e'dit 'v'imrc)
 nnoremap <silent> ,ev :e $MYVIMRC<cr>
