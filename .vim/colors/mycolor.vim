@@ -66,24 +66,36 @@ highlight clear wildMenu
 "
 " My own defs -- {{{
 "highlight bniLink	ctermfg=11 cterm=bold
-highlight bniLink	ctermfg=11
-highlight bniLinkBold	ctermfg=11 cterm=bold
-highlight bniComment	ctermfg=238
-highlight bniBold	ctermbg=16 cterm=bold
+highlight bniReverse	ctermfg=0 ctermbg=16 cterm=reverse 
+		      \ guifg=#e0b000 guibg=#171717 gui=reverse
+highlight bniLink	ctermfg=11 ctermbg=0 
+		      \ guifg=#f0c000 guibg=#171717 gui=underline
+highlight bniLinkBold	ctermfg=11 ctermbg=0 cterm=bold 
+		      \ guifg=#f0c000 guibg=#171717 gui=bold,underline
+highlight bniBold	ctermbg=16 ctermbg=0 cterm=bold 
+		      \ guifg=#ffee00 guibg=#171717 gui=bold
+highlight bniComment	ctermfg=238 guifg=#555555
+highlight bniAlert 	ctermfg=0 ctermbg=1 
+		      \ guifg=#000000 guibg=#ff0000
+
+" Linking some defaults
+highlight! def link Cursor bniReverse
+highlight! def link LineNr bniComment
 
 " Normal and visual mode
-highlight visual	ctermbg=130 ctermfg=0
-highlight Normal	ctermbg=16 
+highlight Visual	ctermbg=130 ctermfg=0 guifg=#eebb00 guibg=#22222 gui=reverse
+highlight Normal	ctermbg=16 guifg=#ddaa00 guibg=#171717
 
 " Setup status line
-highlight StatusLineNC	ctermbg=234 cterm=bold
-highlight StatusLine	cterm=bold,reverse
+highlight StatusLineNC	ctermbg=234 cterm=bold guibg=#00000 gui=bold
+highlight StatusLine	cterm=bold,reverse gui=bold,reverse
 
 " Special keys tabs and trailing spaecs
-highlight SpecialKey	ctermfg=238
+highlight SpecialKey	ctermfg=238 guifg=#444444 
 
 " Warn me when I go beyond 80 columns
-highlight ColorColumn ctermbg=1
+" black char on red background
+highlight! def link ColorColumn bniAlert 
 
 " Make bracket matching stand out
 highlight! def link MatchParen bniLinkBold
