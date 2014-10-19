@@ -66,6 +66,11 @@ highlight clear wildMenu
 "
 " My own defs -- {{{
 "highlight bniLink	ctermfg=11 cterm=bold
+" Normal and visual mode
+highlight Normal	ctermbg=16 guifg=#ddaa00 guibg=#171717
+highlight Visual	ctermfg=0 ctermbg=130 cterm=reverse
+		      \ guifg=#eebb00 guibg=#22222 gui=reverse
+
 highlight bniReverse	ctermfg=0 ctermbg=16 cterm=reverse 
 		      \ guifg=#e0b000 guibg=#171717 gui=reverse
 highlight bniLink	ctermfg=11 ctermbg=0 
@@ -82,9 +87,6 @@ highlight bniAlert 	ctermfg=0 ctermbg=1
 highlight! def link Cursor bniReverse
 highlight! def link LineNr bniComment
 
-" Normal and visual mode
-highlight Visual	ctermbg=130 ctermfg=0 guifg=#eebb00 guibg=#22222 gui=reverse
-highlight Normal	ctermbg=16 guifg=#ddaa00 guibg=#171717
 
 " Setup status line
 highlight StatusLineNC	ctermbg=234 cterm=bold guibg=#00000 gui=bold
